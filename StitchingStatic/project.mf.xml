@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+    <application name="StitchingStatic">
+        <crown name="StitchingStatic">
+            <desc>user script</desc>
+            <serves/>
+        </crown>
+        <meta key="author">AppSpace Sample</meta>
+        <meta key="version">1.0</meta>
+        <meta key="licensed">false</meta>
+        <meta key="priority">low</meta>
+        <meta key="copy-protected">false</meta>
+        <meta key="read-protected">false</meta>
+        <entry path="pages" default="AppSpaceViewers-2.5.0.0.msdd">
+            <file type="application/zip">AppSpaceViewers-2.5.0.0.msdd</file>
+        </entry>
+        <entry path="resources">
+            <file type="image">cam_14135893/0.png</file>
+            <file type="image">cam_14135893/1.png</file>
+            <file type="image">cam_14135893/10.png</file>
+            <file type="image">cam_14135893/11.png</file>
+            <file type="image">cam_14135893/12.png</file>
+            <file type="image">cam_14135893/2.png</file>
+            <file type="image">cam_14135893/3.png</file>
+            <file type="image">cam_14135893/4.png</file>
+            <file type="image">cam_14135893/5.png</file>
+            <file type="image">cam_14135893/6.png</file>
+            <file type="image">cam_14135893/7.png</file>
+            <file type="image">cam_14135893/8.png</file>
+            <file type="image">cam_14135893/9.png</file>
+            <file type="image">cam_14340525/0.png</file>
+            <file type="image">cam_14340525/1.png</file>
+            <file type="image">cam_14340525/10.png</file>
+            <file type="image">cam_14340525/11.png</file>
+            <file type="image">cam_14340525/12.png</file>
+            <file type="image">cam_14340525/2.png</file>
+            <file type="image">cam_14340525/3.png</file>
+            <file type="image">cam_14340525/4.png</file>
+            <file type="image">cam_14340525/5.png</file>
+            <file type="image">cam_14340525/6.png</file>
+            <file type="image">cam_14340525/7.png</file>
+            <file type="image">cam_14340525/8.png</file>
+            <file type="image">cam_14340525/9.png</file>
+            <file type="image">cam_14425986/0.png</file>
+            <file type="image">cam_14425986/1.png</file>
+            <file type="image">cam_14425986/10.png</file>
+            <file type="image">cam_14425986/11.png</file>
+            <file type="image">cam_14425986/12.png</file>
+            <file type="image">cam_14425986/2.png</file>
+            <file type="image">cam_14425986/3.png</file>
+            <file type="image">cam_14425986/4.png</file>
+            <file type="image">cam_14425986/5.png</file>
+            <file type="image">cam_14425986/6.png</file>
+            <file type="image">cam_14425986/7.png</file>
+            <file type="image">cam_14425986/8.png</file>
+            <file type="image">cam_14425986/9.png</file>
+            <file type="application">cam_14135893.json</file>
+            <file type="application">cam_14340525.json</file>
+            <file type="application">cam_14425986.json</file>
+        </entry>
+        <entry path="scripts" default="Static.lua">
+            <file type="text/x-lua">Static.lua</file>
+        </entry>
+    </application>
+</manifest>
