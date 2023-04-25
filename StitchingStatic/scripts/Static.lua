@@ -4,7 +4,7 @@
 print('AppEngine Version: ' .. Engine.getVersion())
 
 -- Create a viewer
-local viewer = View.create('viewer2D1')
+local viewer = View.create()
 
 --End of Global Scope-----------------------------------------------------------
 
@@ -67,7 +67,8 @@ local function main()
 
   -- Display results
   if image and plane then
-    viewer:view(image)
+    viewer:addImage(image)
+    viewer:present()
     print(plane:toString())
     print('Stitching successful')
   else
