@@ -4,7 +4,7 @@
 print('AppEngine Version: ' .. Engine.getVersion())
 
 -- Create a viewer
-local viewer = View.create('viewer2D1')
+local viewer = View.create()
 
 --End of Global Scope-----------------------------------------------------------
 
@@ -25,7 +25,7 @@ local function main()
   local direction = {0.99818713673244, 0.06014000366606, 0.0023706583345014}
   ---------------------------------------------------------------------------
 
-  -- Get the camera model corresponding to a certain device and offset
+  ---Get the camera model corresponding to a certain device and offset
   local function getCameraModel(index, position)
     local model = Object.load('resources/' .. cameras[index] .. '.json', 'JSON')
     local offset = (encoderValues[position] - encoderValues[1]) * encoderResolution
@@ -33,7 +33,7 @@ local function main()
     return model
   end
 
-  -- Get the image corresponding to a certain device and offset
+  ---Get the image corresponding to a certain device and offset
   local function getImage(index, position)
     local filepath = string.format('resources/%s/%d.png', cameras[index], position - 1)
     local image = Image.load(filepath)
@@ -67,7 +67,8 @@ local function main()
 
   -- Display results
   if image and plane then
-    viewer:view(image)
+    viewer:addImage(image)
+    viewer:present()
     print(plane:toString())
     print('Stitching successful')
   else
